@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Horizon College | Fees & Academic Progress</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="brand">
+                <h1>Horizon</h1>
+                <p>Student Information System</p>
+            </div>
+
+            <nav class="navigation">
+
+                <a href="index.html" class="nav-link">
+                    Dashboard
+                </a>
+
+                <a href="students.html" class="nav-link">
+                    Students & Enrolment
+                </a>
+
+                <a href="academic.html" class="nav-link active">
+                    Fees & Academic Progress
+                </a>
+
+                <a href="portal.html" class="nav-link">
+                    Courses & Reports
+                </a>
+
+            </nav>
+
+            <div class="sidebar-footer">
+                <p>Horizon Private Training College</p>
+                <span>Integrated Student Information System</span>
+            </div>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Header -->
+            <header class="top-header">
+
+                <div>
+                    <p class="page-label">
+                        FINANCE & ACADEMIC PERFORMANCE
+                    </p>
+
+                    <h2>Fees & Academic Progress</h2>
+
+                    <p class="welcome-text">
+                        Monitor student fee accounts, outstanding balances,
+                        assessment results and academic performance.
+                    </p>
+                </div>
+
+                <div class="staff-profile">
+
+                    <div class="staff-avatar">
+                        HC
+                    </div>
+
+                    <div>
+                        <span class="staff-name">
+                            College Administrator
+                        </span>
+
+                        <span class="staff-role">
+                            Authorised User
+                        </span>
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- Summary Cards -->
+            <section class="summary-grid">
+
+                <article class="summary-card success">
+
+                    <div class="card-heading">
+                        <p>Paid Accounts</p>
+                        <span class="card-tag">Fees</span>
+                    </div>
+
+                    <h3>1,162</h3>
+
+                    <span>
+                        Student accounts currently up to date
+                    </span>
+
+                </article>
+
+
+                <article class="summary-card warning">
+
+                    <div class="card-heading">
+                        <p>Outstanding Accounts</p>
+                        <span class="card-tag">Attention</span>
+                    </div>
+
+                    <h3>86</h3>
+
+                    <span>
+                        Accounts requiring payment follow-up
+                    </span>
+
+                </article>
+
+
+                <article class="summary-card info">
+
+                    <div class="card-heading">
+                        <p>Results Recorded</p>
+                        <span class="card-tag">Academic</span>
+                    </div>
+
+                    <h3>3,426</h3>
+
+                    <span>
+                        Assessment results recorded
+                    </span>
+
+                </article>
+
+
+                <article class="summary-card">
+
+                    <div class="card-heading">
+                        <p>Progress Reviews</p>
+                        <span class="card-tag">Performance</span>
+                    </div>
+
+                    <h3>64</h3>
+
+                    <span>
+                        Student records requiring review
+                    </span>
+
+                </article>
+
+            </section>
+
+
+            <!-- Finance Section -->
+            <section class="activity-section">
+
+                <article class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <p class="section-label">
+                                STUDENT FEE MANAGEMENT
+                            </p>
+
+                            <h3>Student Accounts</h3>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="primary-button"
+                            id="recordPaymentButton">
+                            Record Payment
+                        </button>
+
+                    </div>
+
+
+                    <div class="activity-table-wrapper">
+
+                        <table class="activity-table">
+
+                            <thead>
+
+                                <tr>
+                                    <th>Student ID</th>
+                                    <th>Student</th>
+                                    <th>Amount Due</th>
+                                    <th>Amount Paid</th>
+                                    <th>Balance</th>
+                                    <th>Status</th>
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>STU-2026-1048</td>
+                                    <td>Jordan Adams</td>
+                                    <td>R 28,500.00</td>
+                                    <td>R 28,500.00</td>
+                                    <td>R 0.00</td>
+
+                                    <td>
+                                        <span class="status success-status">
+                                            Paid
+                                        </span>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>STU-2026-1035</td>
+                                    <td>Sam Daniels</td>
+                                    <td>R 31,200.00</td>
+                                    <td>R 25,000.00</td>
+                                    <td>R 6,200.00</td>
+
+                                    <td>
+                                        <span class="status warning-status">
+                                            Outstanding
+                                        </span>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>STU-2026-1022</td>
+                                    <td>Alex Thomas</td>
+                                    <td>R 26,800.00</td>
+                                    <td>R 20,000.00</td>
+                                    <td>R 6,800.00</td>
+
+                                    <td>
+                                        <span class="status warning-status">
+                                            Outstanding
+                                        </span>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <p
+                        class="prototype-message"
+                        id="paymentMessage">
+                        Fee balances are associated with individual
+                        student records for centralised administration.
+                    </p>
+
+                </article>
+
+            </section>
+
+
+            <!-- Lower Grid -->
+            <section class="dashboard-grid">
+
+                <!-- Outstanding Fee Notifications -->
+                <article class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <p class="section-label">
+                                PAYMENT FOLLOW-UP
+                            </p>
+
+                            <h3>Fee Notifications</h3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="activity-item">
+
+                        <div>
+                            <strong>STU-2026-1035</strong>
+                            <span>
+                                Outstanding balance: R 6,200.00
+                            </span>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="secondary-button reminder-button">
+                            Send Reminder
+                        </button>
+
+                    </div>
+
+
+                    <div class="activity-item">
+
+                        <div>
+                            <strong>STU-2026-1022</strong>
+                            <span>
+                                Outstanding balance: R 6,800.00
+                            </span>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="secondary-button reminder-button">
+                            Send Reminder
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Academic Progress -->
+                <article class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <p class="section-label">
+                                ACADEMIC PERFORMANCE
+                            </p>
+
+                            <h3>Recent Assessment Results</h3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="result-item">
+
+                        <div>
+                            <strong>Jordan Adams</strong>
+                            <span>
+                                Systems Analysis
+                            </span>
+                        </div>
+
+                        <div class="result-score">
+                            <strong>82%</strong>
+                            <span class="status success-status">
+                                Competent
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="result-item">
+
+                        <div>
+                            <strong>Sam Daniels</strong>
+                            <span>
+                                Business Operations
+                            </span>
+                        </div>
+
+                        <div class="result-score">
+                            <strong>76%</strong>
+                            <span class="status success-status">
+                                Competent
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="result-item">
+
+                        <div>
+                            <strong>Alex Thomas</strong>
+                            <span>
+                                Project Planning
+                            </span>
+                        </div>
+
+                        <div class="result-score">
+                            <strong>68%</strong>
+                            <span class="status info-status">
+                                Progressing
+                            </span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+
+            <!-- Academic Results Table -->
+            <section class="activity-section">
+
+                <article class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <p class="section-label">
+                                ASSESSMENT RECORDS
+                            </p>
+
+                            <h3>Academic Results</h3>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="primary-button">
+                            + Record Result
+                        </button>
+
+                    </div>
+
+
+                    <div class="activity-table-wrapper">
+
+                        <table class="activity-table">
+
+                            <thead>
+
+                                <tr>
+                                    <th>Student ID</th>
+                                    <th>Course</th>
+                                    <th>Assessment</th>
+                                    <th>Mark</th>
+                                    <th>Status</th>
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>STU-2026-1048</td>
+                                    <td>Information Technology</td>
+                                    <td>Systems Analysis</td>
+                                    <td>82%</td>
+
+                                    <td>
+                                        <span class="status success-status">
+                                            Competent
+                                        </span>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>STU-2026-1035</td>
+                                    <td>Business Management</td>
+                                    <td>Business Operations</td>
+                                    <td>76%</td>
+
+                                    <td>
+                                        <span class="status success-status">
+                                            Competent
+                                        </span>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>STU-2026-1022</td>
+                                    <td>Project Management</td>
+                                    <td>Project Planning</td>
+                                    <td>68%</td>
+
+                                    <td>
+                                        <span class="status info-status">
+                                            Progressing
+                                        </span>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+
+            <!-- Requirement Traceability -->
+            <section class="requirement-note">
+
+                <strong>
+                    Prototype Requirement Coverage:
+                </strong>
+
+                <span>
+                    FR-04 Fee Payment & Student Balance Management |
+                    FR-05 Outstanding Fee Notifications |
+                    FR-08 Assessment Results & Academic Progress
+                </span>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

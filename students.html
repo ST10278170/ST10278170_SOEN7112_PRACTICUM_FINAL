@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Horizon College | Students & Enrolment</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="brand">
+                <h1>Horizon</h1>
+                <p>Student Information System</p>
+            </div>
+
+            <nav class="navigation">
+
+                <a href="index.html" class="nav-link">
+                    Dashboard
+                </a>
+
+                <a href="students.html" class="nav-link active">
+                    Students & Enrolment
+                </a>
+
+                <a href="academic.html" class="nav-link">
+                    Fees & Academic Progress
+                </a>
+
+                <a href="portal.html" class="nav-link">
+                    Courses & Reports
+                </a>
+
+            </nav>
+
+            <div class="sidebar-footer">
+                <p>Horizon Private Training College</p>
+                <span>Integrated Student Information System</span>
+            </div>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Header -->
+            <header class="top-header">
+
+                <div>
+                    <p class="page-label">STUDENT ADMINISTRATION</p>
+
+                    <h2>Students & Enrolment</h2>
+
+                    <p class="welcome-text">
+                        Maintain student records, review applications
+                        and manage course enrolments.
+                    </p>
+                </div>
+
+                <div class="staff-profile">
+
+                    <div class="staff-avatar">
+                        HC
+                    </div>
+
+                    <div>
+                        <span class="staff-name">
+                            College Administrator
+                        </span>
+
+                        <span class="staff-role">
+                            Authorised User
+                        </span>
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- Summary Cards -->
+            <section class="summary-grid">
+
+                <article class="summary-card">
+
+                    <div class="card-heading">
+                        <p>Active Students</p>
+                        <span class="card-tag">Students</span>
+                    </div>
+
+                    <h3>1,248</h3>
+
+                    <span>Current student records</span>
+
+                </article>
+
+
+                <article class="summary-card info">
+
+                    <div class="card-heading">
+                        <p>Current Enrolments</p>
+                        <span class="card-tag">Courses</span>
+                    </div>
+
+                    <h3>1,396</h3>
+
+                    <span>Active course enrolments</span>
+
+                </article>
+
+
+                <article class="summary-card warning">
+
+                    <div class="card-heading">
+                        <p>Pending Applications</p>
+                        <span class="card-tag">Review</span>
+                    </div>
+
+                    <h3>42</h3>
+
+                    <span>Applications awaiting review</span>
+
+                </article>
+
+
+                <article class="summary-card success">
+
+                    <div class="card-heading">
+                        <p>Approved Applications</p>
+                        <span class="card-tag">Admissions</span>
+                    </div>
+
+                    <h3>118</h3>
+
+                    <span>Approved during current intake</span>
+
+                </article>
+
+            </section>
+
+
+            <!-- Student Records -->
+            <section class="activity-section">
+
+                <article class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <p class="section-label">
+                                STUDENT RECORD MANAGEMENT
+                            </p>
+
+                            <h3>Student Records</h3>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="primary-button">
+                            + Add Student
+                        </button>
+
+                    </div>
+
+
+                    <!-- Search -->
+                    <div class="filter-bar">
+
+                        <div class="search-group">
+
+                            <label for="studentSearch">
+                                Search Student
+                            </label>
+
+                            <input
+                                type="text"
+                                id="studentSearch"
+                                placeholder="Search by student number or name">
+
+                        </div>
+
+
+                        <div class="filter-group">
+
+                            <label for="studentStatus">
+                                Student Status
+                            </label>
+
+                            <select id="studentStatus">
+
+                                <option value="all">
+                                    All Students
+                                </option>
+
+                                <option value="active">
+                                    Active
+                                </option>
+
+                                <option value="pending">
+                                    Pending
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Student Table -->
+                    <div class="activity-table-wrapper">
+
+                        <table class="activity-table student-table">
+
+                            <thead>
+
+                                <tr>
+                                    <th>Student ID</th>
+                                    <th>Student</th>
+                                    <th>Programme</th>
+                                    <th>Contact</th>
+                                    <th>Enrolment</th>
+                                    <th>Status</th>
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>STU-2026-1048</td>
+                                    <td>Jordan Adams</td>
+                                    <td>Information Technology</td>
+                                    <td>jordan.adams@example.com</td>
+                                    <td>2026 Intake</td>
+
+                                    <td>
+                                        <span class="status success-status">
+                                            Active
+                                        </span>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>STU-2026-1035</td>
+                                    <td>Sam Daniels</td>
+                                    <td>Business Management</td>
+                                    <td>sam.daniels@example.com</td>
+                                    <td>2026 Intake</td>
+
+                                    <td>
+                                        <span class="status success-status">
+                                            Active
+                                        </span>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>STU-2026-1022</td>
+                                    <td>Alex Thomas</td>
+                                    <td>Project Management</td>
+                                    <td>alex.thomas@example.com</td>
+                                    <td>2026 Intake</td>
+
+                                    <td>
+                                        <span class="status success-status">
+                                            Active
+                                        </span>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>APP-2026-0119</td>
+                                    <td>Taylor Jacobs</td>
+                                    <td>Information Technology</td>
+                                    <td>taylor.jacobs@example.com</td>
+                                    <td>Awaiting Approval</td>
+
+                                    <td>
+                                        <span class="status warning-status">
+                                            Pending
+                                        </span>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+
+            <!-- Application and Enrolment -->
+            <section class="dashboard-grid">
+
+                <!-- Applications -->
+                <article class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <p class="section-label">
+                                ADMISSIONS
+                            </p>
+
+                            <h3>Recent Applications</h3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="activity-item">
+
+                        <div>
+                            <strong>APP-2026-0119</strong>
+
+                            <span>
+                                Information Technology
+                            </span>
+                        </div>
+
+                        <span class="status warning-status">
+                            Pending Review
+                        </span>
+
+                    </div>
+
+
+                    <div class="activity-item">
+
+                        <div>
+                            <strong>APP-2026-0118</strong>
+
+                            <span>
+                                Business Management
+                            </span>
+                        </div>
+
+                        <span class="status success-status">
+                            Approved
+                        </span>
+
+                    </div>
+
+
+                    <div class="activity-item">
+
+                        <div>
+                            <strong>APP-2026-0117</strong>
+
+                            <span>
+                                Project Management
+                            </span>
+                        </div>
+
+                        <span class="status info-status">
+                            Under Review
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Course Enrolments -->
+                <article class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <p class="section-label">
+                                COURSE REGISTRATION
+                            </p>
+
+                            <h3>Recent Enrolments</h3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="activity-item">
+
+                        <div>
+                            <strong>STU-2026-1048</strong>
+
+                            <span>
+                                Information Technology
+                            </span>
+                        </div>
+
+                        <span class="status success-status">
+                            Enrolled
+                        </span>
+
+                    </div>
+
+
+                    <div class="activity-item">
+
+                        <div>
+                            <strong>STU-2026-1035</strong>
+
+                            <span>
+                                Business Management
+                            </span>
+                        </div>
+
+                        <span class="status success-status">
+                            Enrolled
+                        </span>
+
+                    </div>
+
+
+                    <div class="activity-item">
+
+                        <div>
+                            <strong>STU-2026-1022</strong>
+
+                            <span>
+                                Project Management
+                            </span>
+                        </div>
+
+                        <span class="status success-status">
+                            Enrolled
+                        </span>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+
+            <!-- Requirement Traceability -->
+            <section class="requirement-note">
+
+                <strong>
+                    Prototype Requirement Coverage:
+                </strong>
+
+                <span>
+                    FR-01 Student Record Management |
+                    FR-02 Online Student Application & Registration |
+                    FR-03 Course Enrolment Management
+                </span>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
